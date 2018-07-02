@@ -40,7 +40,7 @@ class Student
   end
   
   def self.create(name:, grade:)
-    pupil = new(name, grade)
+    new(name, grade).tap { |pupil| 
     pupil.save
     
   end
