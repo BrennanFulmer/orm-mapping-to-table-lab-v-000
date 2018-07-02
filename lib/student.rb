@@ -40,8 +40,8 @@ class Student
   end
   
   def self.create(name:, grade:)
-    pupil = (name, grade)
-    
+    pupil = new(name, grade)
+    pupil.save
   end
   
 end
